@@ -1,0 +1,14 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  cicd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "introduce"
+        run: 'echo "hi"'
